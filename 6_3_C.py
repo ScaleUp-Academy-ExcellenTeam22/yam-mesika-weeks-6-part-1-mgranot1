@@ -12,7 +12,8 @@ def count_words(text):
     :param text: String that includes words
     :return: A dictionary of the lengths of the words in the text without punctuation
     """
-    only_letter = "".join([letter for letter in text if letter in get_letters()])
+    list_all_letters = get_letters()
+    only_letter = "".join([letter for letter in text if letter in list_all_letters])
     dic_count_words = {word: len(word) for word in only_letter.split()}
     return dic_count_words
 
