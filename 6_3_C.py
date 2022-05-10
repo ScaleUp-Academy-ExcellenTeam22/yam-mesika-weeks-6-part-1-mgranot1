@@ -7,7 +7,7 @@ def get_letters():
     return small_letter + capital_letter + [" "]
 
 
-def count_words(text):
+def count_words(text:str):
     """
     :param text: String that includes words
     :return: A dictionary of the lengths of the words in the text without punctuation
