@@ -1,5 +1,5 @@
 
-def words_length(sentence):
+def words_length(sentence:str):
     """
     :param sentence: A few words
     :return: List with word lengths
