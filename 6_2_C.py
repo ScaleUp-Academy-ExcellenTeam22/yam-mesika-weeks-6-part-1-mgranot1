@@ -1,15 +1,15 @@
 from timeit import default_timer as timer
 
 
-def my_timer(f, *params):
+def my_timer(my_function, *params):
     """
-    :param f: function parameters
+    :param function: function parameters
     :param params:
     :return: Execution time function f for the parameters params
     """
-    start_time_f = timer()
-    f(params)
-    end_time_f = timer()
-    time_f = start_time_f - end_time_f
-    return time_f
+    start_time_function = timer()
+    my_function(params)
+    end_time_function = timer()
+    time_function = start_time_function - end_time_function
+    return time_function
 
